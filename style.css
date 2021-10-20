@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./assets/background.jpg');
+  min-height: 100vh;
+  background-size: 150%;
+  background-position: center;
+  height: 100vh;
+  backdrop-filter: blur(8px) brightness(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ori {
+  max-width: 13rem;
+  max-height: 13rem;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  transition: all 1s ease;
+  transform: translateZ(0);
+}
+
+.card {
+  transform-style: preserve-3d;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-image: url('./assets/background.jpg');
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 400px;
+  min-height: 800px;
+  z-index: 0;
+  position: absolute;
+}
+
+.title {
+  color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  transform: translateZ(0);
+  transition: all 1s ease;
+}
+
+.icons {
+  filter: invert();
+
+  width: 60px;
+
+  transform: translateZ(0);
+}
+
+.stores {
+  transition: all 0.5s ease;
+}
+
+.imagem {
+  transition: all 0.6s ease;
+}
+
+.texto {
+  transition: all 0.5s ease;
+}
+
+#screen {
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 90vh;
+}
